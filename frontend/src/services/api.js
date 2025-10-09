@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Backend URL (change if deployed later)
 const API = axios.create({
-  baseURL: "http://localhost:5000", // backend server
+  baseURL: "https://ratenow.onrender.com",
 });
 
 // Submit feedback
