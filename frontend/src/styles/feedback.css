@@ -1,0 +1,46 @@
+.feedback-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.feedback-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feedback-container label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #444;
+}
+
+.feedback-container select,
+.feedback-container textarea,
+.feedback-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.feedback-container button {
+  margin-top: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.feedback-container button:hover {
+  background: #0056b3;
+}
