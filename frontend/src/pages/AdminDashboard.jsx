@@ -35,7 +35,6 @@ function AdminDashboard() {
         <tbody>
           {feedbackList.map((fb) => (
             <tr key={fb._id}>
-              <td>{fb.restaurantName}</td>
               <td>{fb.serviceRating}</td>
               <td>{fb.foodRating}</td>
               <td>{fb.cleanlinessRating}</td>
