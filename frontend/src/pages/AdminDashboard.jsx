@@ -24,7 +24,7 @@ function AdminDashboard() {
       <table border="1">
         <thead>
           <tr>
-            <th>Restaurant</th>
+           
             <th>Service</th>
             <th>Food</th>
             <th>Cleanliness</th>

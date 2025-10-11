@@ -8,7 +8,6 @@ import "../styles/main.css";
 function FeedbackForm() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
-    restaurantName: "",
     serviceRating: "",
     foodRating: "",
     cleanlinessRating: "",
@@ -35,14 +34,7 @@ const handleSubmit = async (e) => {
       <div className="container">
     <form onSubmit={handleSubmit}>
       <h2>Feedback Form</h2>
-      <input
-        type="text"
-        name="restaurantName"
-        placeholder="Restaurant Name"
-        value={form.restaurantName}
-        onChange={handleChange}
-        required
-      />
+     
       <input
         type="number"
         name="serviceRating"

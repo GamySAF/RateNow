@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 
 const feedbackSchema = new mongoose.Schema({
-  restaurantName: {
-    type: String,
-    required: true,
-  },
+
   serviceRating: {
     type: Number,
     required: true,
