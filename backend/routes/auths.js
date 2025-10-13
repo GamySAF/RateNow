@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const Admin = require("../models/Admin"); // ✅ correct path
+const Admin = require("../models/admin"); // ✅ correct path
 
 // 🔑 Use environment variable for JWT secret (safer)
 const JWT_SECRET = process.env.JWT_SECRET || "supersecretkey";
