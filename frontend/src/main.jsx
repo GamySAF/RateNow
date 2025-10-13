@@ -6,11 +6,22 @@ import ThankYouPage from "./pages/ThankYouPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import ProtectedRoute from "./Components/protectedRouteS";
 
 function App() {
   return (
     <Router>
       <Routes>
+
+         <Route
+    path="/admin"
+    element={
+      <ProtectedRoute>
+        <AdminDashboard />
+      </ProtectedRoute>
+    }
+  />
+
         <Route path="/" element={<FeedbackForm />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
         <Route path="/admin" element={<AdminDashboard />} />
