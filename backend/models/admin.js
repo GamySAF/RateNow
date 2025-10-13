@@ -3,10 +3,14 @@ const bcrypt = require("bcrypt");
 
 // 1️⃣ Define the schema
 const adminSchema = new mongoose.Schema({
-  email: {
+   email: {
     type: String,
     required: true,
-    unique: true, // each admin must have a unique email
+    unique: true,
+    match: [
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      "Please enter a valid email address",
+    ],
   },
   password: {
     type: String,
