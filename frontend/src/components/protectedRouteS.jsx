@@ -6,7 +6,7 @@ function ProtectedRoute({ children }) {
   if (!token) {
         
     // Save token
-    const token = sessionStorage.getItem("token")
+    const token = localStorage.getItem("token")
     return <Navigate to="/auth/login" replace />;
   }
 

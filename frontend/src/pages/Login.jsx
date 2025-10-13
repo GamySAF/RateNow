@@ -18,7 +18,7 @@ function Login() {
     try {
       const res = await API.post("/auth/login", formData);
       // Save token in localStorage
-    sessionStorage.setItem("token", res.data.token); // <-- important
+    localStorage.setItem("token", res.data.token); // <-- important
     console.log("done or accepted session token")
 
       setMessage("✅ Login successful!");
