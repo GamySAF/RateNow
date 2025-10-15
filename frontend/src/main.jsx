@@ -6,7 +6,7 @@ import ThankYouPage from "./pages/ThankYouPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import ProtectedRoute from "./Components/protectedRoute";
+import ProtectedRoute from "./components/protectedRoute";
 
 function App() {
   return (
