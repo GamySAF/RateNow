@@ -10,22 +10,21 @@ import ProtectedRoute from "./Components/protectedRouteS";
 
 function App() {
   return (
-    <Router>
+ <Router>
       <Routes>
-
-         <Route
-    path="/admin"
-    element={
-      <ProtectedRoute>
-        <AdminDashboard />
-      </ProtectedRoute>
-    }
-  />
+        {/* ✅ Only one /admin route, protected */}
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
 
         <Route path="/" element={<FeedbackForm />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
-    
-           <Route path="/auth/register" element={<Register />} />
+        <Route path="/auth/register" element={<Register />} />
         <Route path="/auth/login" element={<Login />} />
       </Routes>
     </Router>
