@@ -24,7 +24,7 @@ function App() {
 
         <Route path="/" element={<FeedbackForm />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
-        <Route path="/admin" element={<AdminDashboard />} />
+    
            <Route path="/auth/register" element={<Register />} />
         <Route path="/auth/login" element={<Login />} />
       </Routes>
