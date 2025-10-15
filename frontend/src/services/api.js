@@ -18,3 +18,4 @@ export const submitFeedback = (feedbackData) => API.post("/feedback", feedbackDa
 export const getFeedback = () => API.get("/feedback");
 
 export default API;
+
